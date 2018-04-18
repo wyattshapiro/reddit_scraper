@@ -40,4 +40,5 @@ Create a reddit app at https://www.reddit.com/prefs/apps/ and add client_id/clie
 
 ## Helpful Documentation
 
+http://praw.readthedocs.io/en/latest/getting_started/quick_start.html
 http://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html
