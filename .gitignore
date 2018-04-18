@@ -1,0 +1,7 @@
+*.pyc
+*.DS_Store
+*.csv
+venv/
+src/config.py
+!src/output/sample_output.csv
+!src/input/sample_input.csv

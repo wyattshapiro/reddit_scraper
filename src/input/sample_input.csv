@@ -1,0 +1,4 @@
+subreddit_name,search_term,submission_limit
+"ethereum","new",10
+"ethereum","top","hour"
+"ethereum","hot",10
