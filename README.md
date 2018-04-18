@@ -1,6 +1,6 @@
-# Reddit Comment Scraper
+# Reddit Scraper
 
-Scrape comments from a given thread on reddit.com using PRAW
+Scrape comments from given subreddits on reddit.com using PRAW
 
 ## License
 Copyright (c) Wyatt Shapiro 2018
@@ -9,16 +9,35 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-## Version
-1.0 (4/18/2018)
+## Installation
 
-## Description
-1. Scrapes a given reddit thread
-2. Extracts all comments
-3. Saves to a CSV file
+Clone the repo onto your machine with the following command:
 
-## Known issues
-None.
+$ git checkout https://github.com/CloudburstCode/passiv.git
 
-## Notes
-1. Although the script only uses publicly available information, PRAW's call to the reddit API requires a reddit login.
+
+## Dependencies
+
+We use virtualenv to manage dependencies, if you have it installed you can run
+the following commands from the root code directory to create the environment and
+activate it:
+
+$ virtualenv venv
+$ source venv/bin/activate
+
+Then you can run the following to install dependencies:
+
+$ pip install -r requirements.txt
+
+See https://virtualenv.pypa.io/en/stable/ for more information.
+
+
+## Config
+
+Create a reddit account at https://www.reddit.com/ then add username/password to config.py
+
+Create a reddit app at https://www.reddit.com/prefs/apps/ and add client_id/client_secret to config.py
+
+## Helpful Documentation
+
+http://praw.readthedocs.io/en/latest/code_overview/models/subreddit.html
