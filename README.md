@@ -34,9 +34,28 @@ See https://virtualenv.pypa.io/en/stable/ for more information.
 
 ## Config
 
-Create a reddit account at https://www.reddit.com/ then add username/password to config.py
+Create a reddit account at https://www.reddit.com/ then add username/password to src/config.py
 
-Create a reddit app at https://www.reddit.com/prefs/apps/ and add client_id/client_secret to config.py
+Create a reddit app at https://www.reddit.com/prefs/apps/ and add client_id/client_secret to src/config.py
+
+## Input
+
+1. subreddit_name: name of subreddits
+
+2. search_term:
+
+- "new" for latest posts on subreddit,
+- "hot" for submissions designated as hot by reddit,
+- "top" for top submissions in the past submission_limit
+
+3. submission_limit:
+
+- for "new" or "hot" type search_term, must be int
+- for "top", can be "day", "hour", "month", "week", "year", "all"
+
+## Bugs
+
+1. searching by "top" submissions on a subreddit returns a maximum of 100 submission results even when parameter set to "year" or "all"
 
 ## Helpful Documentation
 

@@ -45,10 +45,8 @@ def write_row(comment=None, header=None):
                         comment.downs,
                         comment.saved,
                         comment.gilded]
-                print('saved comment')
             elif header:
                 row = header
-                print('saved header')
             else:
                 row = []
             writer.writerow(row)
