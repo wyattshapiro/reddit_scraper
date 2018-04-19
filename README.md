@@ -13,12 +13,12 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 Clone the repo onto your machine with the following command:
 
-$ git checkout https://github.com/CloudburstCode/passiv.git
+$ git checkout https://github.com/wyattshapiro/reddit_scraper
 
 
 ## Dependencies
 
-We use virtualenv to manage dependencies, if you have it installed you can run
+I used virtualenv to manage dependencies, if you have it installed you can run
 the following commands from the root code directory to create the environment and
 activate it:
 
@@ -55,7 +55,7 @@ Create a reddit app at https://www.reddit.com/prefs/apps/ and add client_id/clie
 
 ## Bugs
 
-1. searching by "top" submissions on a subreddit returns a maximum of 100 submission results even when parameter set to "year" or "all"
+1. searching by "top" submissions on a subreddit returns a maximum of 100 submission results even when submission_limit = "year" or "all"
 
 ## Helpful Documentation
 
